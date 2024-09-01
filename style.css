@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-div{
+    width: 500px;
+    height: 400px;
+    background-color: rgb(216, 221, 226);
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+}
+.div-score button{
+    position: relative;
+    top: 200px;
+}
+
+.answer-btn{
+    display: block;
+    margin:0 auto;
+    font-size: large;
+    width: 160px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 4px 4px rgb(9, 9, 9);
+    font-weight: bold;
+} 
+#btn-1{
+    padding: 12px;
+    background-color: rgb(220, 217, 20);
+    
+}
+#btn-2{
+    padding: 12px;
+    background-color: rgb(77, 63, 146);
+    color: #fff;
+}
+#btn-3{
+    padding: 12px;
+    background-color: rgb(220, 20, 217);
+   
+}
+#btn-4{
+    padding: 12px;
+    background-color: rgb(63, 125, 146);
+    
+}
+#btn-5{
+    padding: 12px;
+    background-color: rgb(146, 63, 63);
+   
+}
