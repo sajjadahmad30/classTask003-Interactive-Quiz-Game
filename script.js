@@ -53,6 +53,9 @@ function showQuestion(){
         button.innerHTML=answers.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
+        if(answers.correct){
+            button.dataset.correct = answers.correct;
+        }
         button.addEventListener('click', selectAnswer);
     });
 }
@@ -65,13 +68,13 @@ function resetState(){
 }
 
 function selectAnswer(e){
-    const selecteBtn=e.target;
-    const isCorrect = selecteBtn.dataset.correct=== "true";
+    const selectedBtn= e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
     if(isCorrect){
-        selecteBtn.classList.add("correct");
+        selectedBtn.classList.add("correct")
 
     }else{
-        selecteBtn.classList.add("incorrect")
+        selectedBtn.classList.add("incorrect")
     }
 }
 

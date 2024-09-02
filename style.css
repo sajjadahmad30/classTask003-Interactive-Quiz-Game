@@ -62,3 +62,10 @@ body{
     cursor: pointer;
 
 }
+
+.correct{
+    background-color: rgb(136, 222, 136);
+}
+.incorrect{
+    background-color: rgb(222, 136, 136);
+}
