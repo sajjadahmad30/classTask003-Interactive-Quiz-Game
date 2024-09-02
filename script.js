@@ -86,6 +86,12 @@ function selectAnswer(e){
     nextButton.style.display='block'
 }
 
+function showScore(){
+    resetState();
+    questionElements.innerHTML=`Your Score ${score} out of ${questions.length} !`
+    nextButton.innerHTML="Play Again.... ";
+    nextButton.style.display='block'
+}
 
 function handleNextButton(){
     currentQuestionIndex++;
