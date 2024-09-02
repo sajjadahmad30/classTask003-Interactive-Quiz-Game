@@ -41,3 +41,38 @@ function startQuiz(){
     nextButton.innerHTML="Next";
     showQuestion();
 }
+
+function showQuestion(){
+    resetState();   
+    let currentQuestion=questions[currentQuestionIndex];
+    let questionNo=currentQuestionIndex + 1;
+    questionElements.innerHTML=questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answers=>{
+        const button=document.createElement("button")
+        button.innerHTML=answers.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        button.addEventListener('click', selectAnswer);
+    });
+}
+
+function resetState(){
+    nextButton.style.display="none"
+    while(answerButtons.firstChild){
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
+function selectAnswer(e){
+    const selecteBtn=e.target;
+    const isCorrect = selecteBtn.dataset.correct=== "true";
+    if(isCorrect){
+        selecteBtn.classList.add("correct");
+
+    }else{
+        selecteBtn.classList.add("incorrect")
+    }
+}
+
+startQuiz();
