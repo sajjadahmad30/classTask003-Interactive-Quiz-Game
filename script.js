@@ -1,6 +1,6 @@
 const questions=[
     {
-        question:"what is the capital of pakistan?",
+        question:"What is the capital of pakistan?",
         answers:[
         {text:"Peshawer", correct:false},
         {text:"Lahore", correct:false},
@@ -9,7 +9,7 @@ const questions=[
         ]
     },
     {
-        question:"what is the old college in pakistan?",
+        question:"What is the oldest college in pakistan?",
         answers:[
         {text:"Islamia college peshawer", correct:true},
         {text:"Edward college pheshawar", correct:false},
@@ -18,11 +18,11 @@ const questions=[
         ]
     },
     {
-        question:"what is the PM of pakistan?",
+        question:"What is the Current PM of pakistan?",
         answers:[
             {text:"Imran khan", correct:false},
             {text:"Zardari", correct:false},
-            {text:"Shehbaz sharif", correct:true},
+            {text:"Shahbaz sharif", correct:true},
         {text:"Maulana fazlur rahman", correct:false},
         ]
     },
